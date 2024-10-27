@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cobra Kai</title>
+	<link rel="stylesheet" type="text/css" href="temp2.css">
+</head>
+<body>
+   <nav>
+        <ul id="nav">
+            <li><img id="logo" src="../logo2.png" alt="Logo de Cobra Kai"></li>
+            <li><a href="../home.html">Inicio</a></li>
+            <li><a href="../sobre_cobra_kai/Sobre.html">Sobre Cobra Kai</a></li>
+            <li><a href="../personajes/pers.html">Personajes</a></li>
+            <li><a href="../noticias/noti.html">Noticias</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="temporadas" onclick="toggleMenu()">
+            <h2>Temporadas</h2>
+            <ul>
+                <li><a href="temp.html">Temporada 1</a></li>
+                <li><a href="temp3.html">Temporada 3</a></li>
+                <li><a href="temp4.html">Temporada 4</a></li>
+                <li><a href="temp5.html">Temporada 5</a></li>
+            </ul>
+        </section>
+        
+        <h2 class="titulo">Temporada 2</h2>
+        <article id="inicio">
+            <div class="texto-contenedor">
+                <p>
+               		Johnny Lawrence sigue al frente del dojo después de que Miguel se corona campeón en el Torneo de Karate de All Valley. Este triunfo fortalece la popularidad de Cobra Kai y atrae a nuevos estudiantes. Johnny intenta cambiar la filosofía de "No Mercy" para convertirse en un mentor más responsable y ayudar a sus alumnos de una manera menos agresiva.<br><br><br>
+
+               		Sin embargo, los planes de Johnny se complican con el regreso de John Kreese, su antiguo maestro y la figura que encarnaba la versión más despiadada de Cobra Kai. Johnny permite que Kreese se una al dojo como instructor, lo que rápidamente trae consecuencias negativas. Kreese, aunque aparenta haber cambiado, comienza a imponer sus métodos implacables en los estudiantes, lo que lleva a una división entre quienes apoyan su estilo violento y aquellos que siguen la visión más moderada de Johnny.<br><br><br>
+
+					Al mismo tiempo, Daniel LaRusso abre su propio dojo, Miyagi-Do, inspirado en la filosofía pacífica y defensiva de su maestro, el Sr. Miyagi. Su objetivo es enseñar a los jóvenes a defenderse sin recurrir a la violencia, un enfoque completamente opuesto al de Cobra Kai. Robby Keene, el hijo de Johnny, se convierte en su principal alumno y aliado en Miyagi-Do. Daniel también cuenta con el apoyo de su hija, Samantha, quien entrena junto a Robby. La conexión entre Robby y Sam profundiza la rivalidad con Cobra Kai, especialmente con Miguel, quien sigue enamorado de Sam, lo que crea un triángulo amoroso que intensifica el conflicto entre los dojos. 
+				</p>
+			</div>
+				<img src="sam_y_robby.avif">
+		</article>
+
+		<article id="final">
+			<div class="texto-contenedor">
+
+				<p>
+					Las tensiones entre Cobra Kai y Miyagi-Do se vuelven personales y se ven reflejadas en enfrentamientos entre los estudiantes. La influencia de Kreese sobre los alumnos de Cobra Kai se hace cada vez más fuerte, incitándolos a actuar de manera agresiva y sin compasión. Esto choca con los intentos de Johnny de ser un mentor positivo y hace que él mismo se cuestione si fue un error reabrir Cobra Kai.<br><br><br>
+
+					La temporada culmina en un enfrentamiento brutal en la escuela entre los estudiantes de ambos dojos, con una pelea que involucra a Miguel, Robby, Sam y otros miembros de ambos equipos. En esta pelea, Miguel decide mostrar misericordia con Robby, pero Robby lo golpea en un momento de ira, provocando que Miguel caiga de una altura considerable y sufra una lesión crítica en la columna vertebral, que lo deja hospitalizado. Este evento sacude a todos los personajes, dejando a Johnny devastado y a Daniel enfrentando las consecuencias de la violencia que intentaba evitar.<br><br><br>
+
+					Johnny se siente responsable de lo que le ha sucedido a Miguel y se enfrenta a la traición de Kreese, quien toma el control de Cobra Kai. Daniel, por su parte, debe reflexionar sobre su enfoque con Miyagi-Do y cómo la rivalidad con Cobra Kai ha afectado a su propia familia. 
+				</p>
+			</div>
+					<<img src="pelea_escuela.png">       
+        </article>         
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var seasons = document.getElementById("temporadas");
+            seasons.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

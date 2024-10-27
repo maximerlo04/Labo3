@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cobra Kai</title>
+	<link rel="stylesheet" type="text/css" href="temp3.css">
+</head>
+<body>
+   <nav>
+        <ul id="nav">
+            <li><img id="logo" src="../logo2.png" alt="Logo de Cobra Kai"></li>
+            <li><a href="../home.html">Inicio</a></li>
+            <li><a href="../sobre_cobra_kai/Sobre.html">Sobre Cobra Kai</a></li>
+            <li><a href="../personajes/pers.html">Personajes</a></li>
+            <li><a href="../noticias/noti.html">Noticias</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="temporadas" onclick="toggleMenu()">
+            <h2>Temporadas</h2>
+            <ul>
+                <li><a href="temp.html">Temporada 1</a></li>
+                <li><a href="temp2.html">Temporada 2</a></li>
+                <li><a href="temp4.html">Temporada 4</a></li>
+                <li><a href="temp5.html">Temporada 5</a></li>
+            </ul>
+        </section>
+        
+        <h2 class="titulo">Temporada 3</h2>
+        <article id="inicio">
+            <div class="texto-contenedor">
+                <p>
+               		Después de la pelea en la escuela, Miguel queda gravemente herido y hospitalizado con una lesión en la columna que le impide caminar. Esta situación afecta profundamente a Johnny, quien se compromete a apoyar a Miguel en su recuperación. Su esfuerzo da frutos, y Miguel logra volver a caminar y a entrenar en karate, reforzando su vínculo con Johnny. <br><br><br>
+		
+					Robby, por otro lado, huye tras haber lesionado a Miguel. Finalmente, es capturado y enviado a un centro de detención juvenil, donde sufre por estar solo y sin apoyo. Esto agrava la ya complicada relación con su padre, Johnny, quien está concentrado en la recuperación de Miguel. Daniel LaRusso intenta acercarse a Robby y ayudarlo, pero Robby lo rechaza, sintiéndose traicionado por ambos adultos en su vida.<br><br><br>
+
+					Daniel, enfrentando problemas en su concesionaria debido a la influencia de John Kreese, viaja a Okinawa en busca de soluciones para salvar su negocio. Durante su estancia, se reencuentra con Kumiko y Chozen, quienes lo ayudan a reconectarse con el legado del Sr. Miyagi. Chozen le enseña técnicas avanzadas y secretas de Miyagi-Do, enfocadas en la defensa y en desarmar al oponente, que serán clave en su enfrentamiento contra Kreese.
+				</p>
+			</div>
+			<img src="okinawa.jpeg">
+		</article>
+
+		<article id="final">
+			<div class="texto-contenedor">
+
+				<p>
+					Mientras tanto, Kreese intensifica su dominio sobre Cobra Kai, promoviendo una filosofía cada vez más violenta y manipuladora. Recluta nuevos estudiantes y, aprovechando la vulnerabilidad de Robby al salir del centro de detención, logra atraerlo a Cobra Kai, profundizando el conflicto entre Robby y su padre, Johnny.
+					<br><br><br>
+				
+					Los estudiantes de Cobra Kai, liderados por Tory, irrumpen en la casa de los LaRusso y atacan a los estudiantes de Miyagi-Do y Eagle Fang, el nuevo dojo de Johnny. La pelea en la casa de los LaRusso es brutal y caótica, involucrando a personajes como Sam y Tory, quienes llevan su rivalidad al extremo. La lucha termina cuando los adultos intervienen, y los estudiantes de Cobra Kai se retiran, dejando daños tanto físicos como emocionales.<br><br><br>
+
+					Al final, tras este enfrentamiento y reconociendo la creciente amenaza de Kreese, Johnny y Daniel finalmente deciden unir fuerzas para enfrentar a Cobra Kai. Fusionan sus dojos, Miyagi-Do y Eagle Fang, para entrenar juntos a sus estudiantes y competir contra Cobra Kai en el próximo Torneo de Karate de All Valley. 
+				</p>
+			</div>
+					<img src="pelea_larusso.jpg">       
+        </article>         
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var seasons = document.getElementById("temporadas");
+            seasons.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

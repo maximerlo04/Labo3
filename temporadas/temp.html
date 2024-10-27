@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cobra Kai</title>
+	<link rel="stylesheet" type="text/css" href="temp.css">
+</head>
+<body>
+   <nav>
+        <ul id="nav">
+            <li><img id="logo" src="../logo2.png" alt="Logo de Cobra Kai"></li>
+            <li><a href="../home.html">Inicio</a></li>
+            <li><a href="../sobre_cobra_kai/Sobre.html">Sobre Cobra Kai</a></li>
+            <li><a href="../personajes/pers.html">Personajes</a></li>
+            <li><a href="../noticias/noti.html">Noticias</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="temporadas" onclick="toggleMenu()">
+            <h2>Temporadas</h2>
+            <ul>
+                <li><a href="temp2.html">Temporada 2</a></li>
+                <li><a href="temp3.html">Temporada 3</a></li>
+                <li><a href="temp4.html">Temporada 4</a></li>
+                <li><a href="temp5.html">Temporada 5</a></li>
+            </ul>
+        </section>
+        
+        <h2>Temporada 1</h2>
+        <article id="inicio">
+            <div class="texto-contenedor">
+                <p>
+               		Seguimos la vida de Johnny Lawrence, quien se encuentra en un punto bajo. Vive solo, trabaja como fontanero y tiene problemas de conexión con su hijo, Robby, que está distanciado de él. Después de un altercado con unos adolescentes, Johnny decide reabrir el dojo de Cobra Kai para recuperar su antigua gloria en el karate.
+
+					Mientras tanto, conoce a Miguel Diaz, un joven que sufre acoso escolar. Johnny se convierte en su sensei y comienza a entrenarlo bajo la filosofía de "Strike First, Strike Hard, No Mercy". A medida que Miguel entrena y mejora en karate, gana confianza, lo que le ayuda a enfrentar a sus acosadores.<br><br><br>
+
+					Por otro lado, Daniel LaRusso lleva una vida exitosa como vendedor de automóviles, pero su mundo se ve alterado cuando se entera de que Cobra Kai ha reabierto. Daniel, que tiene un profundo resentimiento hacia Johnny y su estilo de karate agresivo, comienza a preocuparse por el impacto que esto podría tener en la comunidad y en los jóvenes.<br><br><br>
+
+					Robby, el hijo de Johnny, se queda con la familia LaRusso y se une al dojo de Miyagi-Do, donde Daniel le enseña un enfoque más equilibrado del karate, inspirado en su maestro, Mr. Miyagi. Esta relación entre Robby y Daniel genera tensiones, especialmente cuando Robby comienza a entrenar con Daniel sin que Johnny lo sepa.
+				</p>
+			</div>
+			<img src="enfrentamiento.webp">
+		</article>
+
+		<article id="final">
+			<div class="texto-contenedor">
+
+				<p>
+					Miguel en la escuela conoce a Sam la hija de Daniel, donde se siente atraído por ella. A pesar de que Sam es popular y tiene su propio grupo de amigos, su conexión con Miguel se vuelve más fuerte a medida que él mejora en karate y gana confianza bajo la tutela de Johnny en Cobra Kai. Sam y Miguel comienzan a salir, sin embargo, su relación enfrenta desafíos, especialmente debido a la rivalidad entre sus padres: Johnny y Daniel. Además, la llegada de Robby, quien también siente algo por Sam, complica las cosas, creando un triángulo amoroso.<br><br><br>
+
+					La temporada se centra en los conflictos de los personajes y su crecimiento personal. Johnny, a pesar de su pasado problemático, trata de encontrar un propósito y una manera de reconectar con Robby a través del karate. Por su parte, Daniel lucha por mantener el legado de su maestro y su enfoque en un karate más filosófico.<br><br><br>
+
+					El clímax se desarrolla durante el Torneo de Karate de All Valley, donde Miguel compite y enfrenta a adversarios, ganandoles a todos hasta llegar a la final.
+
+					La temporada concluye con un emocionante enfrentamiento en el torneo entre Miguel y Robby, dejando a el primero como ganador. Johnny, al final, empieza a encontrar redención a través de sus estudiantes, mientras que Daniel se enfrenta a sus propios desafíos para mantener sus valores. Cobra Kai explora temas de rivalidad, paternidad, redención y cómo el pasado influye en el presente de formas inesperadas.
+				</p>
+			</div>
+					<img src="torneo.jpg">        
+        </article>         
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var seasons = document.getElementById("temporadas");
+            seasons.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

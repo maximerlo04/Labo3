@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cobra Kai</title>
+    <link rel="stylesheet" type="text/css" href="pers.css">
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Bradley Hand", cursive;
+            font-size: 20px;
+        }
+
+        body {
+            background-image: url(../fondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        nav {
+            width: 80%;
+            height: 100px;  
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;           
+            padding: 5px 0;  
+            margin: auto;
+            display: flex; 
+            align-items: center; 
+        }
+
+        .titulo{
+            text-decoration: underline;
+            font-size: 25px;
+        }
+        
+
+        #logo {
+            max-width: 150px;   
+            max-height: 150px;   
+            width: auto;        
+            height: auto;
+            margin-right: 20px; 
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            list-style-type: none;
+            flex-grow: 1; 
+        }
+
+        #nav li {
+            margin: 0 30px; 
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav a:hover {
+            color: red;
+        }
+
+        #content {
+            display: flex;            
+            flex-direction: column; 
+            align-items: flex-start; 
+            margin-top: 20px;       
+            width: 77%;
+            max-width: 1200px;      
+            margin: 100px auto;      
+            color: white;
+            padding: 20px;          
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        h1 {
+            text-decoration: underline;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        #content img{
+            width: 150px; /* Ajusta el ancho según tu preferencia */
+            height: 200px; /* Ajusta la altura según tu preferencia */
+            object-fit: cover; /* Esto asegura que la imagen se recorte para mantener la proporción */
+        }
+
+        #oculto{
+            display: none;
+        }
+
+        #personajes_principales, #personajes_secundarios {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no hay suficiente espacio */
+            justify-content: space-around; /* Espaciado entre los elementos */
+        }
+        
+        article {
+            margin: 10px; /* Espaciado alrededor de cada artículo */
+            width: 150px; /* O ajusta según tu preferencia */
+        }
+
+        .modalApagado {
+            display: none;
+        }
+        .modalEncendido {
+            display: block;
+        }
+        .modalContenido {
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+			<ul id="nav">
+				<li><img id="logo" src="../logo2.png" alt="Logo de Cobra Kai"></li>
+				<li><a href="../home.html">Inicio</a></li>
+				<li><a href="../sobre_cobra_kai/Sobre.html">Sobre CobraKai</a></li>
+				<li><a href="../temporadas/temp.html">Temporadas</a></li>
+				<li><a href="../noticias/noti.html">Noticias</a></li>
+				<li><a href="../galeriagaleria.html">Videos</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <div id="content">
+        
+            <h1>Personajes Principales</h1>
+            <div id="personajes_principales">
+                <article id="jhonny">
+                    <div id="oculto">
+                        <h3>Jhonny Lawrence</h3>
+                        <p>
+                            Interpretado por William Zabka, es un exestrella de karate que busca redimirse al reabrir el dojo Cobra Kai. Su evolución de antagonista a mentor es central en la serie, mostrando su lucha por encontrar su lugar en un mundo cambiante.
+                        </p>
+                    </div>
+                    <img src="jhonny.png" alt="Johnny Lawrence" class="personaje-img">
+                </article>
+
+                <article id="daniel">
+                    <div id="oculto">
+                        <h3>Daniel LaRusso</h3>
+                        <p>
+                            Interpretado por Ralph Macchio, es el protagonista original de Karate Kid, ahora un exitoso hombre de negocios que lucha por mantener los valores del karate mientras enfrenta a Johnny y Cobra Kai.
+                        </p>
+                    </div>
+                <img src="daniel.png" alt="Daniel LaRusso" class="personaje-img">
+                </article>
+                
+                <article id="miguel">
+                    <div id="oculto">
+                        <h3>Miguel Diaz</h3>
+                        <p>
+                            Interpretado por Xolo Maridueña, es un estudiante de Johnny que se convierte en un destacado karateka. Su viaje3incluye desafíos familiares y la búsqueda de su identidad en el mundo del karate.
+                        </p>
+                    </div>
+                <img src="miguel.png" alt="Miguel Diaz" class="personaje-img">
+                </article>
+                
+                <article id="samantha">
+                    <div id="oculto">
+                        <h3>Samantha LaRusso</h3>
+                        <p>
+                            Interpretada por Mary Mouser, es la hija de Daniel LaRusso que se involucra en el karate y enfrenta las dificultades típicas de la adolescencia, incluyendo la presión social y los conflictos amorosos.
+                        </p>
+                    </div>
+                <img src="sam.png" alt="Samantha LaRusso" class="personaje-img">
+                </article>
+                
+                <article id="robby">
+                    <div id="oculto">
+                        <h3>Robby Keane</h3>
+                        <p>
+                            Interpretado por Tanner Buchanan, es el hijo de Johnny. Su historia es complicada por su búsqueda de la aprobación de su padre y su conexión con Daniel, reflejando la lucha por encontrar su camino.
+                        </p>
+                    </div>
+                <img src="robby.png" alt="Robby Keane" class="personaje-img">
+                </article>
+            
+                <article id="terry">
+                    <div id="oculto">
+                        <h3>Terry Silver</h3>
+                        <p>
+                            Interpretado por Thomas Ian Griffith, es un viejo conocido de Kreese que regresa para ayudar a revivir Cobra Kai y se convierte en un antagonista clave, utilizando tácticas manipuladoras.
+                        </p>
+                    </div>
+                <img src="terry.png" alt="Terry Silver" class="personaje-img">
+                </article>
+                
+                <article id="kreese">
+                    <div id="oculto">
+                        <h3>John Kreese</h3>
+                        <p>
+                            Interpretado por Martin Kove, es el fundador del dojo Cobra Kai, cuya filosofía despiadada y enfoque en la victoria a toda costa lo convierten en un antagonista clásico a lo largo de la serie.
+                        </p>
+                    </div>
+                <img src="kreese.png" alt="John Kreese" class="personaje-img">
+                </article>
+    
+                <article id="tory">
+                    <div id="oculto">
+                        <h3>Tory Nichols</h3>
+                        <p>
+                            Interpretada por Peyton List, es una estudiante de Cobra Kai que enfrenta sus propios desafíos personales y familiares. Su fuerte personalidad y habilidades en el karate la convierten en una rival formidable, especialmente para Sam.
+                        </p>
+                    </div>
+                <img src="tory.png" alt="Tory Nichols" class="personaje-img">
+                </article>
+            
+                <article id="hawk">
+                    <div id="oculto">
+                        <h3>Hawk (Eli Moskowitz)</h3>
+                        <p>
+                            Interpretado por Jacob Bertrand, es inicialmente un chico inseguro que se transforma en Hawk, un karateka agresivo con un mohawk, simbolizando su búsqueda de identidad y poder.
+                        </p>
+                    </div>
+                <img src="hawk.png" alt="Hawk (Eli Moskowitz)" class="personaje-img">
+                </article>
+        
+            </div>
+        
+            <h1>Personajes Secundarios</h1>
+            <div id="personajes_secundarios">
+                <article id="aisha">
+                    <div id="oculto">
+                        <h3>Aisha Robinson</h3>
+                        <p>
+                            Interpretada por Nichole Brown, es amiga de Sam y Miguel, y su historia aborda temas de bullying y la búsqueda de la aceptación en un entorno competitivo.
+                        </p>
+                    </div>
+                <img src="aisha.png" alt="Aisha Robinson" class="personaje-img">
+                </article>
+
+                <article id="kenny">
+                    <div id="oculto">
+                        <h3>Kenny</h3>
+                        <p>
+                            Interpretado por Dallas Dupree Young, es un nuevo estudiante en Cobra Kai cuyo arco argumental explora las dinámicas de poder entre los jóvenes y las consecuencias del bullying.
+                        </p>
+                    </div>
+                <img src="kenny.png" alt="Kenny" class="personaje-img">
+                </article>
+                
+                <article id="demetri">
+                    <div id="oculto">
+                        <h3>Demetri</h3>
+                        <p>
+                            Interpretado por Gianni DeCenzo, es amigo de Miguel, que enfrenta inseguridades y se convierte en karateka, mostrando su crecimiento a lo largo de la serie.
+                        </p>
+                    </div>
+                <img src="demetri.png" alt="Demetri" class="personaje-img">
+                </article>
+            
+                <article id="carmen">
+                    <div id="oculto">
+                        <h3>Carmen Diaz</h3>
+                        <p>
+                            Interpretada por Vanessa Rubio, es la madre de Miguel, que apoya a su hijo en su crecimiento personal y en su camino por el karate.
+                        </p>
+                    </div>
+                <img src="carmen.png" alt="Carmen Diaz" class="personaje-img">
+                </article>
+            
+                <article id="yasmin">
+                    <div id="oculto">
+                        <h3>Yasmin</h3>
+                        <p>
+                            Interpretada por Annelise Cepero, es parte del grupo popular y su historia refleja las tensiones sociales en la vida de los adolescentes.
+                        </p>
+                    </div>
+                <img src="yasmin.png" alt="Yasmin" class="personaje-img">
+                </article>
+            
+                <article id="chosen">
+                    <div id="oculto">                
+                        <h3>Chosen</h3>
+                        <p>
+                            Interpretado por Yuji Okumoto, es un personaje de Karate Kid II que regresa como aliado de Daniel, mostrando un cambio de un rival impulsivo a un guerrero más sabio y reflexivo.
+                        </p>
+                    </div>
+                <img src="chosen.png" alt="Chosen" class="personaje-img">
+                </article>
+            
+                <article id="anthony">
+                    <div id="oculto">
+                        <h3>Anthony LaRusso</h3>
+                        <p>
+                            Interpretado por Griffin Santopietro, es el hijo de Daniel LaRusso. Su personaje ofrece una perspectiva fresca de la vida familiar de Daniel y su crecimiento a lo largo de la serie.
+                        </p>
+                    </div>
+                <img src="anthony.png" alt="Anthony LaRusso" class="personaje-img">
+                </article>
+            </div>
+   </div>
+
+   <div id="ventana" class="modalApagado">
+        <div class="modalContenido">
+            <button id="cerrar">Cerrar</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+   <script src="pers.js">
+       document.querySelectorAll('.personaje-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        
+        const contenido = this.parentElement.querySelector('.oculto').innerHTML;
+        
+      
+        document.getElementById('modalContent').innerHTML = contenido;
+        document.getElementById('ventana').classList.add('modalEncendido');
+    });
+});
+
+
+document.getElementById('cerrar').addEventListener('click', function() {
+    document.getElementById('ventana').classList.remove('modalEncendido');
+});
+   </script>
+</body>
+</html>
