@@ -376,3 +376,111 @@
             }
 
         }
+
+        @media (min-width: 350px){
+            #nav{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav {
+                height: 100px;
+                width: 85%; 
+                justify-content: space-between; 
+                position: relative; 
+                z-index: 10; 
+                transition: height 0.5s ease;
+                margin: 0 auto;
+
+            }
+
+            #rayitas {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 10px;
+            }
+
+            
+            #nav.show {
+                max-height: 300px;
+                animation: slideDown 0.5s forwards;
+            }
+
+            
+            #content.move-down {
+                margin-top: 200px;
+                transition: margin-top 0.5s;
+            }
+
+            #imagenes img{
+                width: 40px;
+                height: 40px;
+                padding: 0 10px;
+            }
+
+            .texto-contenedor{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            #flecha-arriba{
+                bottom: 0;
+                right: 0;
+            }
+
+            #formulario{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            label{
+                margin: 10px 0;
+                margin-right: auto;
+            }
+
+            input{
+                width: 100%;
+                padding: 8px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #botones{
+                display: flex;
+                margin-top: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button{
+                width: auto;
+                padding: 8px 12px;
+                margin: 0 auto;
+            }
+
+             #formulario img {
+                display: block; 
+                width: 250px;
+                margin: 20px auto;
+            }
+
+            #flecha-arriba{
+                bottom: 0;
+                right: 0;
+            }
+
+            *{
+                font-size: 18px;
+            }
+
+        }
