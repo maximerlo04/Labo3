@@ -1,15 +1,12 @@
-document.querySelectorAll('.personaje-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        
-        const contenido = this.parentElement.querySelector('.oculto').innerHTML;
-        
-      
-        document.getElementById('modalContent').innerHTML = contenido;
-        document.getElementById('ventana').classList.add('modalEncendido');
-    });
-});
+	window.onscroll = function() {
+    	const flecha = document.getElementById("flecha-arriba");
+   		if (document.documentElement.scrollTop > 200) {
+        	flecha.style.display = "block";
+    	} else {
+        	flecha.style.display = "none";
+    	}
+		};
 
-
-document.getElementById('cerrar').addEventListener('click', function() {
-    document.getElementById('ventana').classList.remove('modalEncendido');
-});
+		function desplazarArriba() {
+    	window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
