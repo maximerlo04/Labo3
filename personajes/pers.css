@@ -1,0 +1,156 @@
+* {
+            padding: 0;
+            margin: 0;
+            font-family: "Bradley Hand", cursive;
+            font-size: 20px;
+        }
+
+        body {
+            background-image: url(../fondo2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        nav {
+            width: 80%;
+            height: 100px;  
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;           
+            padding: 5px 0;  
+            margin: auto;
+            display: flex; 
+            align-items: center; 
+        }
+
+        .titulo{
+            text-decoration: underline;
+            font-size: 25px;
+        }
+        
+
+        #logo {
+            max-width: 150px;   
+            max-height: 150px;   
+            width: auto;        
+            height: auto;
+            margin-right: 20px; 
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            list-style-type: none;
+            flex-grow: 1; 
+        }
+
+        #nav li {
+            margin: 0 30px; 
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav a:hover {
+            color: red;
+        }
+
+        #content {
+            display: flex;            
+            flex-direction: column; 
+            align-items: flex-start; 
+            margin-top: 20px;       
+            width: 77%;
+            max-width: 1200px;      
+            margin: 100px auto;      
+            color: white;
+            padding: 20px;          
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        h1 {
+            text-decoration: underline;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        #content img{
+            width: 150px;
+            height: 200px; 
+            object-fit: cover; 
+        }
+
+        #personajes_destacados{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            width: 77%;
+            max-width: 1200px;
+            margin: 100px auto;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #imagenes img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            padding: 0 40px;
+        }
+
+        #imagenes{
+            display: flex;
+            justify-content: center;
+        }
+
+        footer p{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .personaje {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .descripcion {
+            max-width: 600px; 
+            margin-left: 15px;
+        }
+        .invertido {
+            flex-direction: row-reverse; 
+        }
+
+        h3{
+            text-decoration: underline;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        #flecha-arriba {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #flecha-arriba img {
+            width: 50px;
+            height: 50px;
+        }
