@@ -69,9 +69,23 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
-        video{
-            max-width: 300px;
-            margin: 10px;
+        #galeria {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: flex-start;
+        }
+
+        #galeria #videos {
+            flex: 1 1 300px; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 350px; 
+            height: auto;
         }
 
         #content h2{
@@ -87,8 +101,8 @@
         }
 
         img{
-            width: 300px;
-            height: auto;
+            width: 330px;
+            height: 200px;
         }
 
         footer{
