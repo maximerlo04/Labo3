@@ -132,3 +132,17 @@
             font-size: 15px;
             margin-bottom: 20px;
         }
+
+        #flecha-arriba {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #flecha-arriba img {
+            width: 50px;
+            height: 50px;
+        }
