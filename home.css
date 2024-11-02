@@ -241,7 +241,8 @@
     			flex-direction: column;
     		}
     		#imagenes-h22{
-    			max-width: 250px;
+    			width: 200px;
+    			height: auto;
     		}
 
     		#imagenes-h2 {
@@ -321,6 +322,7 @@
     		}
     		#imagenes-h22{
     			max-width: 400px;
+    			heigh
     		}
 
     		#imagenes-h2 {
@@ -334,7 +336,7 @@
 
 		}
 
-		@media (min-width: 350px){
+		@media (min-width: 350px) (max-width: 480px){
 			#nav{
 				display: flex;
         		flex-direction: column;
